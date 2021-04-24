@@ -64,9 +64,6 @@ def main(argv):
                     tmp_cleanup = 1
 
                 parse_one_file(in_file, out_file, tmp_cleanup)
-    
-
-
 
 if __name__ == '__main__':
     main(sys.argv[1:])

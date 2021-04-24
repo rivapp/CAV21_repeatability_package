@@ -45,10 +45,6 @@ def main(argv):
 
     tmp_cleanup = 0
 
-    if len(argv) > 2:
-        tmp_cleanup = argv[2]
-
-
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
 
@@ -61,6 +57,11 @@ def main(argv):
 
             # check if matlab file
             if '.m' in in_file:
+
+                if 'tmp' in in_file:
+                    tmp_cleanup = 0
+                else:
+                    tmp_cleanup = 1
 
                 parse_one_file(in_file, out_file, tmp_cleanup)
     

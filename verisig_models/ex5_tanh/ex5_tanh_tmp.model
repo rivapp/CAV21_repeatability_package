@@ -8,7 +8,7 @@ hybrid reachability
 		time 2
 		remainder estimation 1e-1
 		identity precondition 
-		gnuplot octagon x0, x1
+		matlab octagon x0, x1
 		fixed orders 4
 		cutoff 1e-10
 		precision 100

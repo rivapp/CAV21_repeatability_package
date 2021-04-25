@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM tensorflow/tensorflow:1.15.0-gpu-py3
 
 MAINTAINER Radoslav Ivanov
 
@@ -13,6 +13,7 @@ COPY ./ReachNNStar /home/reachNNStar
 COPY ./verisig /home/verisig
 COPY ./tmp /home/tmp
 COPY ./verisig_models /home/verisig_models
+COPY ./cleanup_scripts /home/cleanup_scripts
 
 RUN cd /home/verisig/flowstar && make
 RUN cd /home/tmp && make

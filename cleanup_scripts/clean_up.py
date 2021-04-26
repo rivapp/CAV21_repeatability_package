@@ -28,7 +28,7 @@ def parse_one_file(in_file, out_file, tmp_cleanup):
                     
                     items = line.split('color')
 
-                    new_line = items[0] + 'color\', \'[0 0 1]\');' 
+                    new_line = items[0] + 'color\', \'[0 0 1]\');\n' 
                     
                     lines_to_write.append(new_line)
 

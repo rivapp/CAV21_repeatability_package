@@ -17,11 +17,11 @@ for x1 = x1_range
     end
 end
 
-% figure;
-% plot(allTraj{1}(1,:), allTraj{1}(2,:), 'r')
-% hold on;
-% for i = 2:size(allTraj)
-%    plot(allTraj{i}(1,:), allTraj{i}(2,:), 'r')
-% end
+figure;
+plot(allTraj{1}(1,:), allTraj{1}(2,:), 'r')
+hold on;
+for i = 2:size(allTraj)
+   plot(allTraj{i}(1,:), allTraj{i}(2,:), 'r')
+end
 
 save('trajectories.mat', 'allTraj');

@@ -24,12 +24,6 @@ plot(goal_x, goal_y, 'magenta', 'linewidth', 2);
 set(gca,'fontsize',24)
 ylabel('x_2', 'FontSize',30);
 xlabel('x_1', 'FontSize',30);
-%ylim([-1 1.5])
-%title('Reachable sets for B_1 sig', 'FontSize',20);
-%[lgd, hObj] = legend('Simulated Trajectories', 'TMP', 'NNV', 'Location', 'northeast');
-%lgd.FontSize = 22;
-%hL=findobj(hObj,'type','line');  % get the lines, not text
-%set(hL,'linewidth',3)            % set their width property
 grid on;
 
 export_fig('reach_sets_reachnn_ex1_sig.pdf', '-transparent')
